@@ -1,5 +1,5 @@
 // components/TrendingMovies.jsx
-import { fetchTrendingMovies } from "@/lib/fetchTrendingMovies";
+// import { fetchTrendingMovies } from "@/lib/fetchTrendingMovies";
 import MovieCard from "./MovieCard";
 
 
