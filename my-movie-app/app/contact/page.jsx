@@ -44,14 +44,9 @@ export default function ContactPage() {
       <nav className="bg-black bg-opacity-80 p-4 fixed w-full top-0 shadow-lg z-50">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-red-500 hover:text-red-400">
-            MovieApp
-          </Link>
-          <Link
-            href="/"
-            className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg font-semibold transition"
-          >
             Home
           </Link>
+          
         </div>
       </nav>
 
@@ -106,11 +101,10 @@ export default function ContactPage() {
       {/* Footer (copied from Home page) */}
       <footer className="bg-black bg-opacity-80 text-gray-400 text-sm py-6 mt-8">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} MovieApp. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Cinematrix. All rights reserved.</p>
           <div className="flex space-x-4 mt-2 md:mt-0">
             <Link href="/" className="hover:text-red-500">Home</Link>
-            <Link href="/contact" className="hover:text-red-500">Contact</Link>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
+            <a href="https://github.com/AJOH1" target="_blank" rel="noopener noreferrer" className="hover:text-red-500">
               GitHub
             </a>
           </div>

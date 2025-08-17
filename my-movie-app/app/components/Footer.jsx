@@ -9,7 +9,7 @@ export default function Footer() {
         
         {/* Left side */}
         <p className="text-sm">
-          &copy; {currentYear} WatchMe. All rights reserved.
+          &copy; {currentYear} Cinematrix. All rights reserved.
         </p>
 
         {/* Center - Navigation links */}
