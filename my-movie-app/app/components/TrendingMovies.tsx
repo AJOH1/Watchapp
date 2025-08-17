@@ -1,22 +1,19 @@
-// components/TrendingMovies.jsx
-// import { fetchTrendingMovies } from "@/lib/fetchTrendingMovies";
+// app/components/TrendingMovies.tsx
 import MovieCard from "./MovieCard";
 
-
-type TrendingMoviesProps = {
+interface Movie {
+  id: number;
   title: string;
-  movies: any[]; // later replace any[] with a Movie type
-};
+  poster_path?: string;
+  overview?: string;
+}
 
-export default function TrendingMovies({ title, movies }: TrendingMoviesProps) {
+export default function TrendingMovies({ movies }: { movies: Movie[] }) {
   return (
-    <section>
-      <h2 className="text-xl font-bold mb-4">{title}</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-        {movies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
-      </div>
-    </section>
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
+      {movies.map((movie) => (
+        <MovieCard key={movie.id} movie={movie} />
+      ))}
+    </div>
   );
 }
