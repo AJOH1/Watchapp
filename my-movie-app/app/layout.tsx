@@ -12,10 +12,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Cinematrix",
-  description: "Discover trending movies and explore cinematic worlds.",
+export const metadata = {
+  title: "Cinematrix – Discover Trending Movies",
+  description: "Browse the latest trending movies with posters, ratings, and details powered by TMDB API.",
+  openGraph: {
+    title: "Cinematrix – Discover Trending Movies",
+    description: "Stay up-to-date with trending movies.",
+    url: "https://cinematrix.vercel.app",
+    siteName: "Cinematrix",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
+
 
 export default function RootLayout({
   children,
