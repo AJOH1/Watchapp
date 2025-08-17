@@ -17,7 +17,7 @@ export const metadata = {
   description: "Browse the latest trending movies with posters, ratings, and details powered by TMDB API.",
   openGraph: {
     title: "Cinematrix – Discover Trending Movies",
-    description: "Stay up-to-date with trending movies.",
+    description: "Stay up-to-date with Cinematrix.",
     url: "https://cinematrix.vercel.app",
     siteName: "Cinematrix",
     images: [
