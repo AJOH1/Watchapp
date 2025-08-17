@@ -17,7 +17,7 @@ export async function POST(req) {
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER, // Your inbox
-      subject: `A new messages 📩 from MovieAPP! => ${name}`,
+      subject: `A New Messages 📩 from Cinematrix! => ${name}`,
       text: `
         Name: ${name}
         Email: ${email}
