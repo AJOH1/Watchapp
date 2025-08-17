@@ -8,12 +8,15 @@ interface Movie {
   overview?: string;
 }
 
-export default function TrendingMovies({ movies }: { movies: Movie[] }) {
+export default function TrendingMovies({ title, movies }: { title?: string; movies: Movie[] }) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
-      {movies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} />
-      ))}
-    </div>
+    <section className="p-4">
+      {title && <h2 className="text-2xl font-bold mb-4">{title}</h2>}
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {movies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </div>
+    </section>
   );
 }

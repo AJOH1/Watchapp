@@ -11,6 +11,7 @@ export default async function HomePage() {
       <Hero />
       <main className="flex-grow px-4">
         <TrendingMovies title="Trending Movies" movies={movies} />
+
       </main>
       <Footer />
     </div>
